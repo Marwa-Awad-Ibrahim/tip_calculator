@@ -1,0 +1,84 @@
+Test cases:
+(1)
+Bill amount=100
+Tip percentage=10
+Tip amount=10
+Total amount=110
+
+(2)
+Bill amount=42
+Tip percentage=10
+Tip amount=4.2 
+Total amount=46.5 (rounded from 46.2)
+
+(3)
+Bill amount=44
+Tip percentage=15
+Tip amount=6.6 
+Total amount=51 (rounded from 50.6)
+
+(4)
+Bill amount=102.5
+Tip percentage=0
+Tip amount=0
+Total amount=102.5
+
+Inputs
+1- Bill amount
+2- Tip percentage
+
+Outputs
+1- Tip amount
+2- Total amount
+
+Constrains
+1- Tip  as percentage, whole numbers (5-10-15-20%)
+2- Bill amount in whole numbers
+3- only positve numbers are accepted
+4- the tip amount rounded up to the nearst 5
+
+Steps
+1-enter the bill amount
+2-choses the tip percentage
+3-calculate the tip amount (bill amount * tip%)
+4-calculate the total amount (bill amount + tip amount)
+5-round up the total amount to the nearst 5 
+
+Pseudocode:
+Initialize billAmount
+Initialize tipPercentage
+Initialize tipAmount
+Initialize totalAmount
+
+//Step 1 Check the inputs 
+
+Prompt billAmount
+
+If(billAmount > 0) add this value to the variable (billAmount),
+Else 
+Display "Negative values are not valid , Please try again"
+
+Prompt tipPercentage
+If(tipPercentage => 0) add this value to the variable (tipPercentage),
+Else 
+Display "Negative values are not valid , Please try again"
+
+
+//Step 2 Calculate the tip
+tipAmount = billAmount * tipPercentage/100
+
+
+//Step 3 Calculate the total
+totalAmount = billAmount * tipAmount
+
+//Step 4 Check the total
+Round the totalAmount to the nearst .5
+
+//Step 5 Display results
+
+Display tipAmount, totalAmount
+
+
+
+
+
